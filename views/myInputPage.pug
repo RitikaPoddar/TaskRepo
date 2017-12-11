@@ -1,0 +1,10 @@
+extends layout
+
+block content
+	h1 MyForm
+
+	form(method='POST' action='http://localhost:8000')
+		div.form-group
+		label(for='name') Name:
+		input#name.form-control(type='text', placeholder='Enter Name' name='name')
+		button.btn.btn-primary(type='submit') Submit
